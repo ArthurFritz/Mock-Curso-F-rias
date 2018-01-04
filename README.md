@@ -1,4 +1,4 @@
-# Mock-Curso-F-rias
+# Mock Curso Férias
 Mock referente aos serviços que serão utilizados no curso de férias
 
 ### Para utilização do mock
