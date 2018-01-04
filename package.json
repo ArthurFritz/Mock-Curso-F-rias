@@ -1,0 +1,18 @@
+{
+  "name": "mock-curso-ferias",
+  "version": "1.0.0",
+  "description": "Mock para o curso de férias 2018 MATERA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "arthurfritzz@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "nodemon": "^1.12.1"
+  }
+}
