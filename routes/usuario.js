@@ -3,13 +3,13 @@ var router = express.Router();
 
 
 var mockInfo = [
-    {id: 1, nome: 'José da Silva', login: "jose", email: 'jose@ponto.com.br', perfil:"Aluno", urlFoto: null, senha:123456},
-    {id: 2, nome: 'Mariano das Neves', login: "mariano", email: 'marino@ponto.com.br', perfil:"Aluno", urlFoto: null, senha:123456},
-    {id: 3, nome: 'Magyver da Silva', login: "magyver", email: 'magyver@ponto.com.br', perfil:"Aluno", urlFoto: null, senha:123456},
-    {id: 4, nome: 'Irineu Nunes', login: "irineu", email: 'irineu@ponto.com.br', perfil:"Aluno", urlFoto: null, senha:123456},
-    {id: 5, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"Aluno", urlFoto: null, senha:123456},
-    {id: 6, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"Aluno", urlFoto: null, senha:123456},
-    {id: 7, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"Aluno", urlFoto: null, senha:123456}
+    {id: 1, nome: 'José da Silva', login: "jose", email: 'jose@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
+    {id: 2, nome: 'Mariano das Neves', login: "mariano", email: 'marino@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
+    {id: 3, nome: 'Magyver da Silva', login: "magyver", email: 'magyver@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
+    {id: 4, nome: 'Irineu Nunes', login: "irineu", email: 'irineu@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
+    {id: 5, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
+    {id: 6, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
+    {id: 7, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456}
 ];
 
 router.get('/', function(req, res) {
