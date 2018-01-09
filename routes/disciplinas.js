@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 var mockInfo = [
-    {id: 1, descricao: 'Angular', instrutores: [1,2], dataInicio: new Date(), dataTermino:new Date(), segmento: "Front-end", urlLogo: null},
-    {id: 2, descricao: 'Ionic', instrutores: [3,4], dataInicio: new Date(), dataTermino:new Date(), segmento: "Mobile", urlLogo: null},
-    {id: 3, descricao: 'Java', instrutores: [5,6], dataInicio: new Date(), dataTermino:new Date(), segmento: "Backend", urlLogo: null}
+    {id: 1, descricao: 'Angular', instrutores: [1,2], dataInicio: "2018-01-22", dataTermino:"2018-02-02", segmento: "Front-end", urlLogo: null},
+    {id: 2, descricao: 'Ionic', instrutores: [3,4], dataInicio: "2018-01-22", dataTermino:"2018-02-02", segmento: "Mobile", urlLogo: null},
+    {id: 3, descricao: 'Java', instrutores: [5,6], dataInicio: "2018-01-22", dataTermino:"2018-02-02", segmento: "Backend", urlLogo: null}
 ];
 
 router.get('/', function(req, res) {
