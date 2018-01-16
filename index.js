@@ -3,6 +3,7 @@ var validation = require('express-validator');
 var bodyParser = require('body-parser');
 var app = express();
 var usuario = require('./routes/usuario');
+var login = require('./routes/login');
 var disciplinas = require('./routes/disciplinas');
 var relatorio = require('./routes/relatorio');
 
@@ -14,6 +15,7 @@ app.get('/', function (req, res) {
 app.use(validation());
 app.use(bodyParser.json());
 app.use(PATH+'usuarios', usuario);
+app.use(PATH+'login', login);
 app.use(PATH+'disciplinas', disciplinas);
 app.use(PATH+'relatorio', relatorio);
 
