@@ -8,7 +8,7 @@ var mockInfo = [
 ];
 
 router.get('/', function(req, res) {
-    res.send(mockInfo);
+    setTimeout((function() {res.send(mockInfo)}), 2000);
 });
 
 router.get('/:id', function(req, res) {
