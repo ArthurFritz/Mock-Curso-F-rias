@@ -8,8 +8,8 @@ var mockInfo = [
     {id: 3, nome: 'Magyver da Silva', login: "magyver", email: 'magyver@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
     {id: 4, nome: 'Irineu Nunes', login: "irineu", email: 'irineu@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
     {id: 5, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
-    {id: 6, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
-    {id: 7, nome: 'Carlos Silva', login: "carlos", email: 'carlos@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456}
+    {id: 6, nome: 'Yan do Forró', login: "yan", email: 'yan@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456},
+    {id: 7, nome: 'Vacibender Dos Santos', login: "vacibender", email: 'vacibender@ponto.com.br', perfil:"ALUNO", urlFoto: null, senha:123456}
 ];
 
 router.get('/', function(req, res) {
