@@ -9,6 +9,14 @@ var relatorio = require('./routes/relatorio');
 
 const PATH = "/api/v1/";
 
+app.options("*", function(req, res, next){
+  var origin = req.get('origin'); 
+  res.header('Access-Control-Allow-Origin', origin);
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+  res.send(200);
+});
+
 app.get('/', function (req, res) {
   res.send('Mock works!');
 });
@@ -18,14 +26,6 @@ app.use(PATH+'usuarios', usuario);
 app.use(PATH+'login', login);
 app.use(PATH+'disciplinas', disciplinas);
 app.use(PATH+'relatorio', relatorio);
-
-app.options("/*", function(req, res, next){
-  var origin = req.get('origin'); 
-  res.header('Access-Control-Allow-Origin', origin);
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-  res.send(200);
-});
 
 app.set('port', (process.env.PORT || 5000));
 
