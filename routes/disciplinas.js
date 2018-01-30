@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 var mockInfo = [
-    { id: 1, descricao: 'Angular', professores: [1, 2], dataInicio: "2018-01-22", dataTermino: "2018-02-02", segmento: "Front-end", urlLogo: null },
-    { id: 2, descricao: 'Ionic', professores: [3, 4], dataInicio: "2018-01-22", dataTermino: "2018-02-02", segmento: "Mobile", urlLogo: null },
-    { id: 3, descricao: 'Java', professores: [5, 6], dataInicio: "2018-01-22", dataTermino: "2018-02-02", segmento: "Backend", urlLogo: null }
+    { id: 1, descricao: 'Angular', professores: [1, 2], dataInicio: "2018-01-22", dataTermino: "2018-02-02", segmento: "FRONTEND", urlLogo: null },
+    { id: 2, descricao: 'Ionic', professores: [3, 4], dataInicio: "2018-01-22", dataTermino: "2018-02-02", segmento: "MOBILE", urlLogo: null },
+    { id: 3, descricao: 'Java', professores: [5, 6], dataInicio: "2018-01-22", dataTermino: "2018-02-02", segmento: "BACKEND", urlLogo: null }
 ];
 
 router.get('/', function (req, res) {
@@ -36,7 +36,7 @@ router.post('/', function (req, res) {
     req.checkBody("professores", "professores obrigatório").exists().notEmpty();
     req.checkBody("dataInicio", "Data início obrigatório").exists().notEmpty();
     req.checkBody("dataTermino", "Data término obrigatório").exists().notEmpty();
-    req.checkBody("segmento", "Perfil tem que ser entre ['Front-end', 'Mobile', 'Backend']").isIn(['Front-end', 'Mobile', 'Backend']);
+    req.checkBody("segmento", "Segmento tem que ser entre ['FRONTEND', 'MOBILE', 'BACKEND']").isIn(['FRONTEND', 'MOBILE', 'BACKEND']);
     var errors = req.validationErrors();
     if (errors.length > 0) {
         res.status(400).json(errors);
@@ -65,7 +65,7 @@ router.put('/:id', function (req, res) {
         req.checkBody("professores", "professores obrigatório").exists().notEmpty();
         req.checkBody("dataInicio", "Data início obrigatório").exists().notEmpty();
         req.checkBody("dataTermino", "Data término obrigatório").exists().notEmpty();
-        req.checkBody("segmento", "Perfil tem que ser entre ['Front-end', 'Mobile', 'Backend']").isIn(['Front-end', 'Mobile', 'Backend']);
+        req.checkBody("segmento", "Segmento tem que ser entre ['FRONTEND', 'MOBILE', 'BACKEND']").isIn(['FRONTEND', 'MOBILE', 'BACKEND']);
         var errors = req.validationErrors();
         if (errors.length > 0) {
             res.status(400).json(errors);
