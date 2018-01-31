@@ -78,7 +78,7 @@ router.put('/:id', function (req, res) {
                 dataInicio: req.body.dataInicio,
                 dataTermino: req.body.dataTermino,
                 segmento: req.body.segmento,
-                urlLogo: item.urlLogo
+                urlLogo: req.body.urlLogo
             };
             mockInfo[index] = newItem;
             res.status(200).json(newItem);
