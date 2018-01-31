@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var usuario = require('./routes/usuario');
 var login = require('./routes/login');
+var loginNew = require('./routes/login.new');
 var disciplinas = require('./routes/disciplinas');
 var relatorio = require('./routes/relatorio');
 
@@ -26,9 +27,11 @@ app.get('/', function (req, res) {
   res.send('Mock works!');
 });
 app.use(validation());
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 app.use(PATH+'usuarios', usuario);
 app.use(PATH+'login', login);
+app.use('/oauth/token', loginNew);
 app.use(PATH+'disciplinas', disciplinas);
 app.use(PATH+'relatorio', relatorio);
 
