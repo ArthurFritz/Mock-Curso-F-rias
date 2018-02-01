@@ -18,7 +18,7 @@ router.post('/', function(req, res) {
       res.status(400).json(errors);
     } else {     
      var rand = Math.floor((Math.random() * 5) + 1)-1;
-     var item = { token: "6as51da6s5d1-6a5s1d65as1d-6a5s1d65as1d" , usuario: mockInfo[rand]};
+     var item = { access_token: "6as51da6s5d1-6a5s1d65as1d-6a5s1d65as1d" , usuario: mockInfo[rand]};
      res.status(200).json(item); 
     }
 });
